@@ -1,4 +1,4 @@
-package JPPegTop;
+package JPJVCL;
 
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
@@ -25,21 +25,21 @@ package JPPegTop;
 {$IMAGEBASE $400000}
 {$DEFINE RELEASE}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'JP PegTop'}
-{$LIBSUFFIX 'Berlin'}
+{$DESCRIPTION 'JP JVCL'}
+{$LIBSUFFIX 'Sydney'}
 {$IMPLICITBUILD ON}
 
 requires
   rtl,
   vcl,
-  vclimg,
   JPPack,
-  JPLib;
+  Jcl,
+  JvCore,
+  JvStdCtrls;
 
 contains
-  JPPegtopTrackBars in '..\..\src\JPPegtopTrackBars.pas',
-  JPPegTopRegister in '..\..\src\JPPegTopRegister.pas',
-  JPPegtopNumEdits in '..\..\src\JPPegtopNumEdits.pas',
-  JPPegtopNumForms in '..\..\src\JPPegtopNumForms.pas',
-  JPPegtopThemes in '..\..\src\JPPegtopThemes.pas';
+  JpJvSpinEdit in '..\..\src\JpJvSpinEdit.pas',
+  JpJvCheckBox in '..\..\src\JpJvCheckBox.pas',
+  JpJvRadioButton in '..\..\src\JpJvRadioButton.pas',
+  JPJVCL_Register in '..\..\src\JPJVCL_Register.pas';
 end.

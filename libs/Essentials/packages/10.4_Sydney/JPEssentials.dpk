@@ -1,4 +1,4 @@
-package JPPegTop;
+package JPEssentials;
 
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
@@ -25,21 +25,16 @@ package JPPegTop;
 {$IMAGEBASE $400000}
 {$DEFINE RELEASE}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'JP PegTop'}
-{$LIBSUFFIX 'Berlin'}
+{$DESCRIPTION 'JP TurboPower Essentials'}
+{$LIBSUFFIX 'Sydney'}
 {$IMPLICITBUILD ON}
 
 requires
   rtl,
   vcl,
-  vclimg,
-  JPPack,
-  JPLib;
+  JPPack;
 
 contains
-  JPPegtopTrackBars in '..\..\src\JPPegtopTrackBars.pas',
-  JPPegTopRegister in '..\..\src\JPPegTopRegister.pas',
-  JPPegtopNumEdits in '..\..\src\JPPegtopNumEdits.pas',
-  JPPegtopNumForms in '..\..\src\JPPegtopNumForms.pas',
-  JPPegtopThemes in '..\..\src\JPPegtopThemes.pas';
+  JPEsGrad in '..\..\src\JPEsGrad.pas',
+  JPEsRegister in '..\..\src\JPEsRegister.pas';
 end.

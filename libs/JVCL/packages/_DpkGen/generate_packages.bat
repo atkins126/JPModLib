@@ -1,9 +1,9 @@
 @echo off
 
-set Template=JPPegTop_TEMPLATE.dpk
-set Desc="JP PegTop"
+set Template=JPJVCL_TEMPLATE.dpk
+set Desc="JP JVCL"
 set BaseOutDir=..\
-set ShortDpkName=JPPegTop.dpk
+set ShortDpkName=JPJVCL.dpk
 
 for %%x in (2009,2010,XE,XE2,XE3,XE4,XE5,XE6,XE7,XE8) do (
   DpkGen -t %Template% -d %Desc% -o %BaseOutDir%%%x\%ShortDpkName% -s %%x
